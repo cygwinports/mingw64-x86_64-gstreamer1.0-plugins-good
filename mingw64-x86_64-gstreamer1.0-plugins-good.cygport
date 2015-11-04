@@ -7,7 +7,7 @@ inherit cross gst-plugins
 
 NAME="mingw64-x86_64-gstreamer1.0-plugins-good"
 VERSION=1.4.5
-RELEASE=1
+RELEASE=2
 CATEGORY="Devel"
 SUMMARY="GStreamer 1.0 Good Plug-ins for Win64 toolchain"
 DESCRIPTION="GStreamer Good Plug-ins is a set of plug-ins that are
