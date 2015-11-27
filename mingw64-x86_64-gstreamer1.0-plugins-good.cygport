@@ -6,11 +6,22 @@ GST_PLUGINS_DISABLE="dv1394 gst_v4l2 jack oss oss4 osx_audio osx_video pulse
 inherit cross gst-plugins
 
 NAME="mingw64-x86_64-gstreamer1.0-plugins-good"
-VERSION=1.4.5
-RELEASE=2
+VERSION=1.6.1
+RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GStreamer 1.0 Good Plug-ins for Win64 toolchain"
 DESCRIPTION="GStreamer Good Plug-ins is a set of plug-ins that are
 consider to have good quality code, correct functionality, and a
 preferred license (LGPL for the plug-in code, LGPL or LGPL-compatible
 for the supporting library)."
+
+PKG_NAMES="${NAME} ${NAME}-extras"
+mingw64_x86_64_gstreamer1_0_plugins_good_CONTENTS="
+	--exclude=libgstaa* --exclude=libgstcaca*
+	${CROSS_PREFIX#/}
+	usr/share/doc/
+"
+mingw64_x86_64_gstreamer1_0_plugins_good_extras_CONTENTS="
+	${CROSS_LIBDIR#/}/gstreamer-1.0/libgstaasink.dll
+	${CROSS_LIBDIR#/}/gstreamer-1.0/libgstcacasink.dll
+"
