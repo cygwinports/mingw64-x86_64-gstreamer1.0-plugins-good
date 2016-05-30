@@ -6,7 +6,7 @@ GST_PLUGINS_DISABLE="dv1394 gst_v4l2 jack oss oss4 osx_audio osx_video pulse
 inherit cross gst-plugins
 
 NAME="mingw64-x86_64-gstreamer1.0-plugins-good"
-VERSION=1.6.3
+VERSION=1.6.4
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GStreamer 1.0 Good Plug-ins for Win64 toolchain"
